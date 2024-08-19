@@ -1,0 +1,128 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333333;
+  width: 100vw;
+  height: 100px;
+}
+
+header h1 {
+  font-family: Roboto;
+  font-size: 40px;
+  color: white;
+}
+
+.container {
+  width: 53vw;
+  margin: 0 auto;
+}
+
+.grid {
+  margin: 30px 0;
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.grid div {
+  width: calc((100% - 48px) / 3);
+  aspect-ratio: 1;
+  border: 5px solid black;
+  display: flex;
+  padding: 14px 11px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.grid div h1 {
+  font-size: 30px;
+}
+
+.grid div p {
+  font-size: 18px;
+}
+
+.grid div.red {
+  border-color: #e30414;
+}
+
+.grid div.green {
+  border-color: #3ea536;
+}
+
+.grid div.yellow {
+  border-color: #ffee00;
+}
+
+.grid div.blue {
+  border-color: #039fe3;
+}
+
+.grid div.pink {
+  border-color: #f8c5ae;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dddddd;
+  width: 100vw;
+  height: 63px;
+}
+
+footer p {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+footer p span {
+  font-size: 18px;
+  font-weight: bold;
+}
