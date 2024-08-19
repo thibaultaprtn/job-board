@@ -57,7 +57,7 @@ header h1 {
 }
 
 .container {
-  width: 53vw;
+  width: 1092px;
   margin: 0 auto;
 }
 
@@ -125,4 +125,27 @@ footer p {
 footer p span {
   font-size: 18px;
   font-weight: bold;
+}
+
+@media (max-width: 1152px) {
+  .container {
+    width: 100%;
+    margin: 0 30px;
+  }
+
+  .grid div {
+    width: calc((100% - 108px) / 3);
+  }
+}
+
+@media (max-width: 1024px) {
+  .grid div {
+    width: calc((100% - 84px) / 2);
+  }
+}
+
+@media (max-width: 576px) {
+  .grid div {
+    width: calc(100% - 60px);
+  }
 }
